@@ -8,63 +8,28 @@ CREATE DATABASE sunday_db;
 
 
 
-stock
 
-Integer
+-- PRODUCT
+-- category_id
 
-Doesn't allow null values
+-- Integer
 
-Set a default value of 10
-
-Validates that the value is numeric
-
-
-category_id
-
-Integer
-
-References the category model's id
+-- References the category model's id
 
 
 
+-- PRODUCT_TAG
 
 
-Tag
+-- product_id
 
-id
+-- Integer
 
-Integer
+-- References the product model's id
 
-Doesn't allow null values
 
-Set as primary key
+-- tag_id
 
-Uses auto increment
+-- Integer
 
-tag_name
-
-String
-
-ProductTag
-
-id
-
-Integer
-
-Doesn't allow null values
-
-Set as primary key
-
-Uses auto increment
-
-product_id
-
-Integer
-
-References the product model's id
-
-tag_id
-
-Integer
-
-References the tag model's id
+-- References the tag model's id
