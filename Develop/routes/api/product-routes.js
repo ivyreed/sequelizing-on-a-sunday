@@ -1,11 +1,8 @@
 const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
-// The `/api/products` endpoint
-
 // get all products
 router.get('/', (req, res) => {
-
   Product.findAll({ include: [Category] })
     .then((data) => res.json(data))
     .catch((err) => res.json(err));
@@ -29,7 +26,6 @@ router.post('/', (req, res) => {
         const productTagIdArr = req.body.tagIds.map((tag_id) => {
           return {
             product_id: product.id
-            // tag_id
           };
         });
         return ProductTag.bulkCreate(productTagIdArr);
@@ -81,7 +77,6 @@ router.put('/:id', (req, res) => {
       return res.json(product);
     })
     .catch((err) => {
-      // console.log(err);
       res.status(400).json(err);
     });
 });
