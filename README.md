@@ -30,4 +30,4 @@ Simply clone the project onto your machine, open it in vs code, seed the databas
 
 - [@Ivy](https://www.github.com/ivyreed)
 
-[🔼 Back to Top](#marketing-assistant)
+[🔼 Back to Top](#sunday-sequelizer)
